@@ -32,6 +32,7 @@
             FavoritosListBox = new ListBox();
             AdicionarButton = new Button();
             pictureBox1 = new PictureBox();
+            removerButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -75,11 +76,22 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // removerButton
+            // 
+            removerButton.Location = new Point(274, 150);
+            removerButton.Name = "removerButton";
+            removerButton.Size = new Size(235, 29);
+            removerButton.TabIndex = 4;
+            removerButton.Text = "Remover dos Favoritos";
+            removerButton.UseVisualStyleBackColor = true;
+            removerButton.Click += removerButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(643, 633);
+            Controls.Add(removerButton);
             Controls.Add(pictureBox1);
             Controls.Add(AdicionarButton);
             Controls.Add(FavoritosListBox);
@@ -97,5 +109,6 @@
         private ListBox FavoritosListBox;
         private Button AdicionarButton;
         private PictureBox pictureBox1;
+        private Button removerButton;
     }
 }
